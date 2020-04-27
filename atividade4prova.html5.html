@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+table, td, th {  
+  border: 2px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.Formatacao{
+         font-family: Arial;
+         font-size: 16px;
+         color:gray;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="Formatacao">
+        <table>
+        <tr>
+            <th>
+                <div id="Filme1"></div>
+            </th>
+            <th>
+                <div id="Filme2"></div>
+            </th>
+            <th>
+                <div id="Filme3"></div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div id="Filme1A"></div>
+            </td>
+            <td>
+                <div id="Filme2A"></div>
+            </td>
+            <td>
+                <div id="Filme3A"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="Filme1G"></div>
+            </td>
+            <td>
+                <div id="Filme2G"></div>
+            </td>
+            <td>
+                <div id="Filme3G"></div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    document.getElementById("Filme1").innerHTML="Titulo";
+    document.getElementById("Filme2").innerHTML="Titulo";
+    document.getElementById("Filme3").innerHTML="Titulo";
+    document.getElementById("Filme1A").innerHTML="Ano de lancamento 2005";
+    document.getElementById("Filme2A").innerHTML="Ano de lancamento 2008";
+    document.getElementById("Filme3A").innerHTML="Ano de lancamento 2015";
+    document.getElementById("Filme1G").innerHTML="Comédia";
+    document.getElementById("Filme2G").innerHTML="Ação";
+    document.getElementById("Filme3G").innerHTML="Ficção";
+
+</script>
+
+    </body>
+    </html>

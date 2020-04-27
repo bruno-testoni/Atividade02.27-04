@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .Fundo{
+          background-color: paleturquoise;
+          width: 40%;
+          margin: 4px;
+          
+      }
+    #resultado {
+      padding: 30px;
+      border: 2px solid gray;
+      width: 30%;
+      font-family: Arial;
+         font-size: 22px;
+    
+    }
+    .Formatacao{
+        font-family: Arial;
+         font-size: 22px;
+         color: gray;
+    }
+
+    .BotaoSomar{
+        font-family: Arial;
+        font-size: 18px;
+        color: red;
+    }
+
+  </style>
+
+</head>
+
+<body>
+    <div class="Fundo">
+
+    
+    <div class="Formatacao">
+    <form id="myForm">
+        <label id="myLabel" for="num1">
+            <b>Digite um valor</b>
+        </label>
+        
+    </form>
+</div>
+  
+      
+      <tr>
+          <td>
+                <input id="num1" type="number" class="numero">
+              
+          </td>
+          <td>
+                <input id="num2" type="number" class="numero">
+          </td>
+          <td>
+                <input id="num3" type="number" class="numero">
+          </td>
+      </tr>
+
+    <p>
+     
+      <button id="somar" onclick="somar()">
+        <div class="BotaoSomar">
+            Somar
+        </div>
+    </button>
+    </p>
+<div class="Resultado">
+
+  <h2 id="resultado"></h2>
+  <p>
+
+  </p>
+</div>
+
+</div>
+  <script>
+function somar() {
+      debugger;
+      var numero1 = Number(document.getElementById("num1").value);
+      var numero2 = Number(document.getElementById("num2").value);
+      var numero3 = Number(document.getElementById("num3").value);
+      var resultado = numero1 + numero2 + numero3;
+      document.getElementById("resultado").innerHTML = resultado;
+  if(resultado % 2 == 0){
+    alert(resultado + " Resultado é Par");
+     }
+      else {
+         alert(resultado + " Resultado é Ímpar")
+      }
+}
+ </script>
+</body>
+
+</html>

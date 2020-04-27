@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .Fundo{
+          background-color: paleturquoise;
+          width: 40%;
+          margin: 4px;
+          
+      }
+      .Resultado {
+      padding: 20px;
+      border: 2px solid gray;
+      width: 30%;
+      font-family: Arial;
+         font-size: 22px;
+    
+    }
+    .Formatacao{
+        font-family: Arial;
+         font-size: 22px;
+         color: gray;
+    }
+    .BotaoCalcular{
+        font-family: Arial;
+        font-size: 18px;
+        color: red;
+    }
+
+
+      </style>
+      </head>
+        <body>
+
+        
+            <div class="Fundo">
+        
+            
+            <div class="Formatacao">
+            <form id="myForm">
+                <label id="myLabel" for="num1">
+                    <b>Digite um valor</b>
+                </label>
+                
+            </form>
+        </div>
+        <input id="numero" type="number" class="numero">
+        <button id="calcular" onclick="calcular()">
+            <div class="BotaoSomar">
+                Calcular
+            </div>
+        </button>
+        </p>
+
+        <div class="Resultado">
+
+            <h2 id="resposta"></h2>
+            <p>
+          
+            </p>
+          </div>
+
+ <script>
+
+            function calcular(){
+  var numero = parseInt(document.getElementById('numero').value);
+  var resposta = document.getElementById('resposta');
+  var resultado=1;
+
+  for(var count=1 ; count<=numero ; count++)
+   resultado *= count;
+
+  resposta.innerHTML =resultado;
+}
+
+                  </script>
+
+                </body>
+
+      </html>
